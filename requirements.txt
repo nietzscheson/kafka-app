@@ -1,0 +1,4 @@
+# kafka-python
+Faker
+# Flask
+confluent-kafka
