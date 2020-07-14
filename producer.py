@@ -3,7 +3,7 @@ from confluent_kafka import Producer
 from faker import Faker
 from time import sleep
 
-p = Producer({'bootstrap.servers': os.environ['KAFKA_BROKER']})
+p = Producer({'bootstrap.servers': os.environ['KAFKA_BROKERS']})
 
 def delivery_report(err, msg):
     """ Called once for each message produced to indicate delivery result.

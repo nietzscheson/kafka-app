@@ -2,7 +2,7 @@ import os
 from confluent_kafka import Consumer
 
 c = Consumer({
-    'bootstrap.servers': os.environ['KAFKA_BROKER'],
+    'bootstrap.servers': os.environ['KAFKA_BROKERS'],
     'group.id': 'my-group',
     'auto.offset.reset': 'earliest'
 })

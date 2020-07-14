@@ -7,7 +7,7 @@ services:
       - ./:/app
     working_dir: /app
     environment:
-      - KAFKA_BROKER=kafka:29092
+      - KAFKA_BROKERS=kafka:29092
   zookeeper:
     image: confluentinc/cp-zookeeper:latest
     environment:
